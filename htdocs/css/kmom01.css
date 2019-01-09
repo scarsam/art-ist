@@ -1,0 +1,165 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max,
+.region-header-col-3 {
+    display: none;
+}
+
+.site-logo img {
+  display: none;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro figure {
+  margin: 15px;
+}
+
+.intro-text {
+  font-size: 25px;
+  line-height: 1.5em;
+  padding: 15px;
+}
+
+.wrap-all {
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 30px 15px;
+}
+
+.byline {
+  padding: 15px;
+}
+
+.site-footer {
+  text-align: center;
+  color: white;
+}
+
+.region-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #607d8b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.region-footer {
+  background: #607d8b;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.region-main {
+  padding: 10px;
+  flex: 2;
+}
+
+.wrap-sidebar {
+  flex: 1;
+}
+
+.region-footer .footer-column-wrapper {
+  color: white;
+  display: flex;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  border-bottom: 2px solid white;
+}
+
+.my-navbar {
+  list-style: none;
+  display: flex;
+}
+
+.my-navbar li {
+  padding: 0 10px;
+}
+
+.my-navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.my-navbar li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.site-logo-text-icon {
+  padding-right: 10px;
+}
+
+.site-logo-text a {
+  color: white;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+ul.toc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+}
+
+ul.toc li {
+  display: flex;
+  border: 1px solid #519D9E;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+ul.toc li a {
+  color: #519D9E;
+  text-decoration: none; 
+}
+
+.next-previous {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-wrap .row {
+  display: flex;
+}
+
+.region-breadcrumb {
+  display: none;
+}

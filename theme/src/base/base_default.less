@@ -1,0 +1,111 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+.hgrid .inner-wrap {
+  @gridImage: '../img/theme/magic-number-@{magicNumber}.png';
+  #desinax-hgrid.showGrid(@gridImage);
+}
+
+body {
+  color: @c-text-body;
+  background-color: @c-bg-body;
+  #desinax-hgrid.font(@fontSizeBody);
+}
+
+.thick-border {
+  width: 100%;
+  height: 3px;
+  background: @c-border;
+  margin: 5px 0;
+}
+
+figure {
+  border: 3px solid @c-border;
+  margin-bottom: 0px !important;
+}
+
+ul {
+  list-style-type: square !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @c-text-headline;
+  font-weight: 700;
+}
+
+a {
+  color: @c-text-link !important;
+}
+
+.table-colors tr,
+.table-colors tr:hover {
+  box-shadow: none;
+}
+
+.outer-wrap-footer {
+  border-top: 1px solid @c-footer-border;
+  background-color: @c-bg-footer;
+  margin-top: 50px;
+  padding-top: 20px;
+  h4 {
+    color: @c-footer-text-headline;
+  }
+}
+
+.outer-wrap-header {
+  border-bottom: 1px solid @c-header-border;
+  background-color: @c-bg-header;
+  .site-logo-text a {
+    text-decoration: none;
+  }
+  .site-logo-text-icon {
+    display: inherit;
+    padding-right: 10px;
+  }
+}
+
+.rm-desktop li ul {
+  background-color: @c-bg-header;
+}
+
+ul.toc li {
+  border: 1px solid @c-border;
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-logo-text a {
+  align-items: center;
+  display: flex;
+}
+
+.next-previous {
+  display: flex;
+  justify-content: space-between;
+}
+
+#desinax-hgrid.activateDefaultTypography();
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+  #desinax-figure.figure();
+}
+
+figure.asciinema {
+  &:extend(figure.figure);
+  #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+  &:extend(figure.figure);
+  #desinax-figure.codepen();
+}

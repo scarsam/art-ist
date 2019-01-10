@@ -35,7 +35,7 @@ return [
             "template" => "anax/v2/header/site_logo",
             "data" => [
                 "class" => "large",
-                "siteLogo"      => "image/theme/ra-logo.png?w=50",
+                "siteLogo"      => "image/ra-logo.png?w=50",
                 "siteLogoAlt"   => "Art Ist",
             ],
         ],
@@ -45,7 +45,7 @@ return [
             "data" => [
                 "homeLink"      => "",
                 "siteLogoText"  => "Art Ist",
-                "siteLogoTextIcon" => "image/theme/ra-logo.png?w=50",
+                "siteLogoTextIcon" => "image/ra-logo.png?w=50",
                 "siteLogoTextIconAlt" => "Art Ist",
             ],
         ],
